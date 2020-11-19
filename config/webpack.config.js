@@ -331,6 +331,7 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        '@': path.join(__dirname, '../src'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -539,6 +540,23 @@ module.exports = function (webpackEnv) {
                 name: 'static/media/[name].[hash:8].[ext]',
               },
             },
+            {
+              test: /\.scss$/,
+              use: [
+                  {loader: 'style-loader'},
+                  {
+                      loader: 'css-loader',
+                      options: {
+                          modules:{
+                              localIdentName: '[path][name]-[local]-[hash:base64:5]'
+                          }
+                      }
+                  },
+                  {
+                      loader: 'sass-loader'
+                  },
+              ]
+          }
             // ** STOP ** Are you adding a new loader?
             // Make sure to add the new loader(s) before the "file" loader.
           ],

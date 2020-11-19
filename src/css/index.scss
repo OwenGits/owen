@@ -1,0 +1,111 @@
+
+$header-bgcolor: rgba(16, 142, 233, 1);
+
+.marginright10{
+    margin-right: 10px;
+}
+
+.roomItem{
+    width: 15%;
+    height: 260px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin: 0.83%;
+    float: left;
+}
+.page-top-div{
+    width: 100%;
+    height: 36px;
+    background-color: #ffffff;
+}
+.poker-card{
+    width: 70px;
+    height: 120px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.p-k-hover:hover{
+    background-color: #b7c3f8;
+}
+.other-card{
+    width: 120px;
+    height: 70px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.other-People-left{
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+.other-People-right{
+    position: absolute;
+    right: 120px;
+    top: 50px;
+}
+.play-room-box{
+    width: 1000px;
+    height: 800px;
+    background-color: #fdfdfd;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -500px;
+}
+.play-room-box-bottom{
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.play-room-box-center{
+    position: absolute;
+    left: 190px;
+}
+.left-play-box{
+    transform: rotate(90deg);
+    left: -325px;
+    bottom: 400px;
+}
+.right-play-box{
+    transform: rotate(-90deg);
+    right: -325px;
+    bottom: 430px;
+}
+.change-origin{
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.half-bottom{
+    bottom: 50%;
+}
+.play-btns-div{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+}
+.select-bottom{
+    bottom: -130px;
+}
+.unselect-bottom{
+    bottom: -150px;
+}
+.last-word{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.top-header{
+    color: #ffffff !important;
+    font-size: 16px;
+    background-color: $header-bgcolor !important;
+}
